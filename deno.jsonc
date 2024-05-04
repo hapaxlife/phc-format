@@ -1,0 +1,22 @@
+{
+  "name": "@denosaurs/phc-format",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+
+  "lock": false,
+  "tasks": {
+    "start": "deno run -A --allow-read --watch example/argon2.ts",
+    "test": "deno test --no-check  test/",
+    "npm": "deno run --no-check -A scripts/build_npm.ts 0.1.0"
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.41.1"
+  }
+}
